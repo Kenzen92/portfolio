@@ -1,9 +1,29 @@
 import React, { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import { motion, motionValue, useInView, useTransform } from 'framer-motion';
 import './Section2.css'
 import indexPage from '/index-page.png'
 
 const Image1 = (): JSX.Element => {
+  const screenWidth = window.innerWidth;
+  console.log(window.outerWidth)
+  console.log(screenWidth);
+    // Create a MotionValue using the screenWidth
+    const screenWidthValue = motionValue(screenWidth);
+
+    // Use the screenWidthValue in the useTransform function
+    const translatedScale = useTransform(
+     screenWidthValue,
+     [0, 1920],
+     [0, 1.5]
+   );
+   const translatedXValue = useTransform(
+    screenWidthValue,
+    [0, 1920],
+    [0, -200]
+   )
+   const intScale = translatedScale.get();
+   console.log(intScale);
+   
 
     return (
       <motion.img
@@ -11,7 +31,7 @@ const Image1 = (): JSX.Element => {
         src={indexPage}
         alt="Grayscale Image"
         initial={{ x: +200, scale: 0.6 }}
-        whileInView={{ x: -200, scale: 1.4}}
+        whileInView={{ x: 0, scale: intScale }}
         transition={{ duration: 2.5 }} 
       />
     );

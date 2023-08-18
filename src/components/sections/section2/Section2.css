@@ -7,7 +7,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 50rem;
+    min-height: 50rem;
+    max-height: fit-content;
+    flex-wrap: nowrap;
 }
 
 .section-2-image {
@@ -21,6 +23,23 @@
 
 .section-2-text {
     padding: 2rem;
-    max-width: 45rem;
+    max-width: 25rem;
+    min-width: 20rem;
     margin-left: 5rem;
 }
+
+/* Media query for tablets (portrait orientation) */
+@media screen and (max-width: 1100px) {
+    .section-2-container {
+      flex-wrap: wrap;
+      height: auto;
+      justify-content: center;
+    }
+  }
+  
+  /* Media query for mobile devices */
+  @media screen and (max-width: 480px) {
+    .section-2-container {
+      font-size: small;
+    }
+  }
