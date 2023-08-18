@@ -1,0 +1,8 @@
+.section-4-container {
+    position: relative;
+    background-color: antiquewhite;
+    height: 300px;
+    z-index: 1;
+    margin-top: -200px;
+    width: 130%;
+}
