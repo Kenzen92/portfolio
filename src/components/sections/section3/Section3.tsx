@@ -1,17 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './Section3.css'
-import desktop from '/desktop.jpg'
+import reactWeather from '/react-weather.png'
 
 const Image2 = (): JSX.Element => {
     
     return (
       <motion.img
         initial={{ x: -200, scale: 0.6 }}
-        whileInView={{ x: 200, scale: 1.5}}
+        whileInView={{ x: 200, scale: 1}}
         transition={{ duration: 1.5 }} 
         className="section-3-image"
-        src={desktop}
+        src={reactWeather}
         alt="Image"
       />
     );
