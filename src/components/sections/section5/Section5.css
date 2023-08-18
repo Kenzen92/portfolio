@@ -1,15 +1,16 @@
-.section-3-container {
+
+.section-5-container {
     position: relative;
+    z-index: 2;
     width: 100%;
     background-color: rgb(41, 0, 88);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    z-index: 2;
     height: 50rem;
 }
 
-.section-3-image {
+.section-5-image {
     max-width: 35rem;
     padding: 2rem;
     height: auto;
@@ -17,8 +18,8 @@
     object-fit: contain; /* Fits the image within the container while preserving aspect ratio */
 }
 
-.section-3-text {
+.section-5-text {
     padding: 2rem;
     max-width: 45rem;
-    margin-right: 5rem;
+    margin-left: 10rem;
 }

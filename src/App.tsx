@@ -4,35 +4,23 @@ import HeroImage from './components/images/HeroImage';
 import Section2 from './components/sections/section2/Section2';
 import Section3 from './components/sections/section3/Section3';
 import Section4 from './components/sections/section4/Section4';
+import Section5 from './components/sections/section5/Section5';
+import Footer from './components/sections/footer/Footer';
 
-import desktop from '/desktop.jpg'
 import './App.css'
 
 
 function App(): JSX.Element {
-  const [scrollY, setScrollY] = useState(0);
-  const elementRef = useRef<HTMLDivElement>(null);
-  
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   
   return (
     <>
     <HeroImage />
     <Section2 />
+    <Section4 />
     <Section3 />
     <Section4 />
+    <Section5 />
+    <Footer />
     </>
   );
 }

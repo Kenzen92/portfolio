@@ -7,15 +7,20 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 50rem;
 }
 
 .section-2-image {
     max-width: 35rem;
-    padding: 5rem;
+    padding: 2rem;
+    height:auto;
+    max-height: 100%; /* Ensures the image doesn't overflow the container */
+    object-fit: contain; /* Fits the image within the container while preserving aspect ratio */
+    overflow:-moz-hidden-unscrollable;
 }
 
 .section-2-text {
-    padding: 5rem;
+    padding: 2rem;
     max-width: 45rem;
-    margin-left: 10rem;
+    margin-left: 5rem;
 }

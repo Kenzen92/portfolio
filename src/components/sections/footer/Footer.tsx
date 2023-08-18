@@ -1,18 +1,16 @@
 import React from 'react';
 import { motion, useScroll, useTransform  } from 'framer-motion';
-import './Section4.css';
+import './Footer.css';
 
 const Section4: React.FC = () => {
     const { scrollYProgress } = useScroll()
-    const scrollRange = useTransform(scrollYProgress, [0, 1], [18, 0]);
-    const xPos = useTransform(scrollYProgress, [0,1], [1000, 0]);
+    const scrollRange = useTransform(scrollYProgress, [0, 0.5], [25, 0]);
   
-
 
   return (
     <motion.div
-    style={{ rotate: scrollRange, x: xPos }}
-      className="section-4-container"
+    style={{ perspective: scrollRange }}
+      className="footer-container"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >

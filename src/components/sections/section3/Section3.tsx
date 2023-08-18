@@ -1,24 +1,18 @@
 import React, { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import './Section3.css'
 import desktop from '/desktop.jpg'
 
 const GrayscaleImage2 = (): JSX.Element => {
-    const grayscaleValue =  scrollY / window.innerHeight;
-
-    const imageStyle: React.CSSProperties = {
-      filter: `grayscale(${1-grayscaleValue})`,
-    };
-
+    
     return (
       <motion.img
-        initial={{ x: -500, scale: 0.6 }}
+        initial={{ x: -200, scale: 0.6 }}
         whileInView={{ x: 0, scale: 1}}
-        transition={{ duration: 2.5 }} 
+        transition={{ duration: 1.5 }} 
         className="section-3-image"
         src={desktop}
         alt="Grayscale Image"
-        style={imageStyle}
       />
     );
   };

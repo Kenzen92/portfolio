@@ -4,19 +4,13 @@ import './Section2.css'
 import blueWaves from '/blue-waves.jpg'
 
 const GrayscaleImage1 = (): JSX.Element => {
-    const grayscaleValue =  scrollY / window.innerHeight;
-
-    const imageStyle: React.CSSProperties = {
-      filter: `grayscale(${1-grayscaleValue})`,
-    };
 
     return (
       <motion.img
         className="section-2-image"
         src={blueWaves}
         alt="Grayscale Image"
-        style={imageStyle}
-        initial={{ x: +500, scale: 0.6 }}
+        initial={{ x: +200, scale: 0.6 }}
         whileInView={{ x: 0, scale: 1}}
         transition={{ duration: 2.5 }} 
       />
