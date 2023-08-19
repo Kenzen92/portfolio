@@ -10,15 +10,20 @@
     min-height: 50rem;
     max-height: fit-content;
     flex-wrap: nowrap;
+    font-size: larger;
 }
 
 .section-2-image {
-    max-width: 35rem;
+    max-width: 50%;
     padding: 2rem;
     height:auto;
     max-height: 100%; /* Ensures the image doesn't overflow the container */
     object-fit: contain; /* Fits the image within the container while preserving aspect ratio */
     overflow:-moz-hidden-unscrollable;
+}
+
+.text-container {
+  min-width: 35%;
 }
 
 .section-2-text {
@@ -34,7 +39,16 @@
       flex-wrap: wrap;
       height: auto;
       justify-content: center;
+      font-size: large;
     }
+
+    .section-2-image {
+      max-width: 70%;
+    }
+
+    .section-2-text {
+      margin-left: 0rem;
+  }
   }
   
   /* Media query for mobile devices */
@@ -42,4 +56,11 @@
     .section-2-container {
       font-size: small;
     }
+    .section-2-image {
+      max-width: 90%;
+    }
+    .section-2-text {
+      min-width: unset;
+      width: 80%;
+  }
   }

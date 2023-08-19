@@ -1,4 +1,3 @@
-
 .section-5-container {
     position: relative;
     z-index: 2;
@@ -7,19 +6,60 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 50rem;
+    min-height: 50rem;
+    max-height: fit-content;
+    flex-wrap: nowrap;
+    font-size: larger;
 }
 
 .section-5-image {
-    max-width: 35rem;
+    max-width: 50%;
     padding: 2rem;
-    height: auto;
+    height:auto;
     max-height: 100%; /* Ensures the image doesn't overflow the container */
     object-fit: contain; /* Fits the image within the container while preserving aspect ratio */
+    overflow:-moz-hidden-unscrollable;
+}
+
+.text-container {
+  min-width: 35%;
 }
 
 .section-5-text {
     padding: 2rem;
-    max-width: 45rem;
-    margin-left: 10rem;
+    max-width: 25rem;
+    min-width: 20rem;
+    margin-left: 5rem;
 }
+
+/* Media query for tablets (portrait orientation) */
+@media screen and (max-width: 1100px) {
+    .section-5-container {
+      flex-wrap: wrap;
+      height: auto;
+      justify-content: center;
+      font-size: large;
+    }
+
+    .section-5-image {
+      max-width: 70%;
+    }
+
+    .section-5-text {
+      margin-left: 0rem;
+  }
+  }
+  
+  /* Media query for mobile devices */
+  @media screen and (max-width: 480px) {
+    .section-5-container {
+      font-size: small;
+    }
+    .section-5-image {
+      max-width: 90%;
+    }
+    .section-5-text {
+      min-width: unset;
+      width: 80%;
+  }
+  }

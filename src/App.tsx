@@ -1,5 +1,3 @@
-import React, { useRef, useState, useEffect } from 'react';
-import { motion, useInView  } from 'framer-motion';
 import HeroImage from './components/images/HeroImage';
 import Section2 from './components/sections/section2/Section2';
 import Section3 from './components/sections/section3/Section3';
@@ -16,9 +14,9 @@ function App(): JSX.Element {
     <>
     <HeroImage />
     <Section2 />
-    <Section4 />
+    <Section4 direction="left"/>
     <Section3 />
-    <Section4 />
+    <Section4  direction="right"/>
     <Section5 />
     <Footer />
     </>
@@ -27,41 +25,3 @@ function App(): JSX.Element {
 
 export default App;
 
-  // const GrayscaleImage1 = (): JSX.Element => {
-  //   const grayscaleValue =  scrollY / window.innerHeight;
-
-  //   const imageStyle: React.CSSProperties = {
-  //     filter: `grayscale(${1-grayscaleValue})`,
-  //   };
-
-  //   return (
-  //     <motion.img
-  //       src={desktop}
-  //       alt="Grayscale Image"
-  //       style={imageStyle}
-  //     />
-  //   );
-  // };
-
-  // const GrayscaleImage2 = (): JSX.Element => {
-  //   const grayscaleValue =  scrollY / window.innerHeight;
-
-  //   const imageStyle: React.CSSProperties = {
-  //     filter: `grayscale(${1-grayscaleValue})`,
-  //   };
-
-  //   return (
-  //     <motion.img 
-  //       src={blueWaves}
-  //       alt="Grayscale Image"
-  //       style={imageStyle}
-  //     />
-  //   );
-  // };
-
-      {/* <div ref={elementRef}>
-      <div className="second-image">
-      <GrayscaleImage1 />
-      <GrayscaleImage2 />
-      </div>
-    </div> */}
