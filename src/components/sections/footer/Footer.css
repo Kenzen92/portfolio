@@ -15,6 +15,10 @@
     justify-content: center; /* Center the buttons horizontally */
     align-items: center; /* Center the buttons vertically */
   }
+
+  .footer-links a {
+    text-decoration: none;
+}
   
   /* Style for the footer buttons */
   .footer-links button {
@@ -28,7 +32,9 @@
     color: white;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
   }
+
   
   /* Hover effect */
   .footer-links button:hover {

@@ -2,24 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './Section3.css'
 import reactWeather from '/react-weather.png'
-
-const Image2 = (): JSX.Element => {
-    
-    return (
-      <motion.img
-        initial={{ x: -200, scale: 0.6 }}
-        whileInView={{ x: 0, scale: 1, transition: { type: 'spring', stiffness: 100, damping: 10 } }} 
-        className="section-3-image"
-        src={reactWeather}
-        alt="Image"
-      />
-    );
-  };
+import SectionImage from '../../images/section-image/SectionImage';
 
 const Section3: React.FC = () => { 
     return (
         <div className="section-3-container">
-          <Image2 />
+           <SectionImage src={reactWeather} alt="Grayscale Image" />
           <motion.div className="text-container"
             initial={{ scale: 0.6 }}
             whileInView={{ scale: 1, transition: { type: 'spring', stiffness: 100, damping: 10 } }}

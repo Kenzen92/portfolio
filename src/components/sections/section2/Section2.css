@@ -1,12 +1,11 @@
-
 .section-2-container {
     position: relative;
     z-index: 2;
     width: 100%;
     background-color: rgb(41, 0, 88);
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around; */
     min-height: 50rem;
     max-height: fit-content;
     flex-wrap: nowrap;
@@ -14,7 +13,8 @@
 }
 
 .section-2-image {
-    max-width: 50%;
+    max-width: 50rem;
+    width: 50%;
     padding: 2rem;
     height:auto;
     max-height: 100%; /* Ensures the image doesn't overflow the container */
@@ -22,16 +22,85 @@
     overflow:-moz-hidden-unscrollable;
 }
 
-.text-container {
+.section-2-text-container {
   min-width: 35%;
+  padding: 2rem;
+  max-width: 65rem;
+  text-align: center;
+  margin-left:auto;
+  margin-right: auto;
 }
 
-.section-2-text {
-    padding: 2rem;
-    max-width: 25rem;
-    min-width: 20rem;
-    margin-left: 5rem;
+.footer-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  background-color: rgba(16, 8, 51, 0.568);
+  justify-content: space-between;
+  height: 168px;
 }
+
+/* Style for the container of footer links */
+.section-2-link {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; /* Center the buttons vertically */
+}
+
+/* Style for the footer buttons */
+.section-2-link button {
+  margin-right: 2rem;
+  border: none;
+  height: 3rem;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #231281cb; /* Green background color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+.section-2-link a {
+  text-decoration: none;
+}
+
+/* Hover effect */
+.section-2-link button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Active effect (when button is clicked) */
+.section-2-link button:active {
+  background-color: #3e8e41; /* Darker green when active */
+}
+
+
+.kenny-solutions-button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.kenny-solutions-button::before {
+  width:4rem;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+}
+
 
 /* Media query for tablets (portrait orientation) */
 @media screen and (max-width: 1100px) {

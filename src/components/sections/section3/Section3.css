@@ -5,7 +5,7 @@
     background-color: rgb(41, 0, 88);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     min-height: 50rem;
     max-height: fit-content;
     flex-wrap: nowrap;
@@ -13,23 +13,24 @@
 }
 
 .section-3-image {
-    max-width: 50%;
-    padding: 2rem;
-    height:auto;
-    max-height: 100%; /* Ensures the image doesn't overflow the container */
-    object-fit: contain; /* Fits the image within the container while preserving aspect ratio */
-    overflow:-moz-hidden-unscrollable;
+  max-width: 50rem;
+  width: 50%;
+  padding: 2rem;
+  height:auto;
+  max-height: 100%; /* Ensures the image doesn't overflow the container */
+  object-fit: contain; /* Fits the image within the container while preserving aspect ratio */
+  overflow:-moz-hidden-unscrollable;
 }
 
 .text-container {
   min-width: 35%;
+  padding: 2rem;
+    max-width: 25rem;
+    text-align: center;
 }
 
 .section-3-text {
-    padding: 2rem;
-    max-width: 25rem;
-    min-width: 20rem;
-    margin-left: 5rem;
+
 }
 
 /* Media query for tablets (portrait orientation) */
