@@ -37,6 +37,7 @@
   display: block;
   list-style-type: none;
   font-style: italic;
+  text-align: left;
 }
 
 .section-2-text-container h2 {
@@ -109,7 +110,11 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
+  width: 70%;
+  max-width: 25rem;
+
 }
 
 .kenny-solutions-button::before {
