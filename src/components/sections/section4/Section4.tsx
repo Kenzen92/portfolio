@@ -18,7 +18,7 @@ const Section4: React.FC<Section4Props> = ({ direction }) => {
     xPos = useTransform(scrollYProgress, [0.2, 0.6], [1000, 0]);
   } else if (direction === "right") {
     scrollRange = useTransform(scrollYProgress, [0.7, 1], [-18, 0]);
-    xPos = useTransform(scrollYProgress, [0.8, 1], [-1500, 0]);
+    xPos = useTransform(scrollYProgress, [0.6, 1], [-1500, 0]);
   }
     
 

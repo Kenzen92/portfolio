@@ -77,11 +77,12 @@
   height: 3.5rem;
   border-radius: 5px;
   font-size: 14px;
-  background-color: #231281cb; /* Green background color */
+  background-color: #462fcca2; /* Green background color */
   color: white;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
   text-decoration: none;
+  width: 100%;
 }
 .section-2-link a {
   text-decoration: none;
@@ -156,6 +157,5 @@
     }
     .section-2-text {
       min-width: unset;
-      width: 80%;
   }
   }
