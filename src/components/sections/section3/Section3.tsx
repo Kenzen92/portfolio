@@ -10,6 +10,22 @@ const Section3: React.FC = () => {
           <div className="column-1">
           <h1>React Weather App</h1> 
           <SectionImage src={reactWeather} alt="Grayscale Image" />
+          <div className="section-3-link-container">
+          <div className="section-3-link">
+          <a href="https://kennysolutions.com/" target="_blank" rel="noopener noreferrer">
+            <button className="kenny-solutions-button">
+              Visit the live site
+            </button>
+          </a>
+        </div>
+        <div className="section-3-link">
+          <a href="https://kennysolutions.com/" target="_blank" rel="noopener noreferrer">
+            <button className="github-button" >
+              View on GitHub
+            </button>
+          </a>
+        </div>
+        </div>
           </div>
           <motion.div className="text-container"
             initial={{ scale: 0.6 }}

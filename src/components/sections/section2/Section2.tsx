@@ -8,30 +8,38 @@ import logos from '/logos.png'
 
 
 const Section2: React.FC = () => { 
-    return (
-      <div className="section-2-container">  
-        <div className="row-1">
-            
-          <motion.div className="section-2-text-container"
-          initial={{ scale: 0.6 }}
-          whileInView={{ scale: 1, transition: { type: 'spring', stiffness: 100, damping: 10 } }}
-          >
+  return (
+    <div className="section-2-container">  
+      <div className="row-1"> 
+        <motion.div className="section-2-text-container"
+        initial={{ scale: 0.6 }}
+        whileInView={{ scale: 1, transition: { type: 'spring', stiffness: 100, damping: 10 } }}
+        >
           <h1>Teaching Platform App</h1>    
           <p className="section-2-text">
             Welcome to my web development portfolio! In this showcase, I'm excited to present an innovative web application I've crafted using Flask, vanilla JavaScript, and CSS. This functional prototype, hosted on an AWS EC2 instance powered by Ubuntu, is seamlessly served by Nginx and Gunicorn, ensuring smooth user experiences.
           </p>
-          </motion.div>
+        </motion.div>
 
-          <SectionImage src={indexPage} alt="Grayscale Image" />
+        <SectionImage src={indexPage} alt="Grayscale Image" />
+        <div className="section-2-link-container">
           <div className="section-2-link">
-          <a href="https://kennysolutions.com/" target="_blank" rel="noopener noreferrer">
-            <button className="kenny-solutions-button">
-              Visit the page
-            </button>
-          </a>
+            <a href="https://kennysolutions.com/" target="_blank" rel="noopener noreferrer">
+              <button className="kenny-solutions-button">
+                Visit the live site
+              </button>
+            </a>
+          </div>
+          <div className="section-2-link">
+            <a href="https://kennysolutions.com/" target="_blank" rel="noopener noreferrer">
+              <button className="github-button" >
+                View on GitHub
+              </button>
+            </a>
+          </div>
         </div>
-        </div>
-        <div className="row-2">
+      </div>
+      <div className="row-2">
         <motion.div className="section-2-text-container"
           initial={{ scale: 0.6 }}
           whileInView={{ scale: 1, transition: { type: 'spring', stiffness: 100, damping: 10 } }}
@@ -48,9 +56,9 @@ const Section2: React.FC = () => {
         <p>The app's backend utilizes Flask, ensuring efficient data handling, while the frontend employs Vanilla JavaScript and CSS for a responsive interface. It's hosted on AWS EC2 with Ubuntu, ensuring scalability. Nginx serves as a reverse proxy, and Gunicorn manages the Python application server, guaranteeing fast and reliable content delivery.</p>
         <SectionImage src={logos} alt="flask, nginx and gunicorn logo" />
         </motion.div>
-        </div>
-        </div>
-    );
-    };
+      </div>
+    </div>
+  );
+};
 
 export default Section2;

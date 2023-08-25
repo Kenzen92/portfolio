@@ -30,6 +30,72 @@
 }
 
 
+.section-3-link-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Style for the footer buttons */
+.section-3-link button {
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  height: 3.5rem;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #462fcca2; /* Green background color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+  width: 100%;
+}
+.section-3-link a {
+  text-decoration: none;
+}
+
+/* Hover effect */
+.section-3-link button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Active effect (when button is clicked) */
+.section-3-link button:active {
+  background-color: #3e8e41; /* Darker green when active */
+}
+
+
+.kenny-solutions-button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 70%;
+  max-width: 25rem;
+}
+
+.kenny-solutions-button::before {
+  width:4rem;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+}
+
+
+
 /* Media query for tablets (portrait orientation) */
 @media screen and (max-width: 1100px) {
     .section-3-container {

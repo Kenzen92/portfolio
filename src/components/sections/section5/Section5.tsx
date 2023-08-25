@@ -13,8 +13,10 @@ const Section5: React.FC = () => {
             initial={{ scale: 0.6 }}
             whileInView={{ scale: 1, transition: { type: 'spring', stiffness: 100, damping: 10 } }}
             >
-            <h1>Some Next App</h1>  
-            <p className="section-3-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare condimentum facilisis. Maecenas molestie metus a mi pellentesque faucibus. Suspendisse in lorem cursus, luctus urna malesuada, porttitor felis. Quisque condimentum lacinia lacus, at finibus augue consequat in. In vestibulum vestibulum elit, eu vehicula sem eleifend in. Maecenas eget felis velit. Nulla facilisi. Donec pretium odio non enim aliquam rhoncus. In lobortis pretium massa in finibus. Aliquam nec sem a justo viverra pellentesque eget in velit. </p>
+            <h1>Technical Skills</h1>  
+            <h2>Programming languages</h2>
+            <p className="section-3-text">I am comfortable working with Python and Java in a variety of application domains.  Object-oriented programming, desktop applications, web microservices and many more.</p>
+            <p className="section-3-text">As the portfolio work listed here shows, I can write in a variety of common web languages. I'm capable of designing, developing and deploying interactive and dynamic, content-rich and data-driven web applications. Wether working with vanilla HTML, CSS and JavaScript, or taking advantage of libraries and frameworks I have the ability to construct performant and visually appealing applications to suit the needs of any business operation.</p>
           </motion.div>  
         <SectionImage src={blueWaves} alt={"Greysscale Image"} />
         </div>
