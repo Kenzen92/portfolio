@@ -7,13 +7,14 @@ import desktopDashboard from '/desktop-dashboard.png'
 import logos from '/logos.png'
 
 
+
 const Section2: React.FC = () => { 
   return (
     <div className="section-2-container">  
       <div className="row-1"> 
         <motion.div className="section-2-text-container"
-        initial={{ scale: 0.6 }}
-        whileInView={{ scale: 1, transition: { type: 'spring', stiffness: 100, damping: 10 } }}
+        initial={{ scale: 0.8 }}
+        whileInView={{ scale: 1, transition: { type: 'spring', stiffness: 100, damping: 10,  } }}
         >
           <h1>Teaching Platform App</h1>    
           <p className="section-2-text">
@@ -22,26 +23,10 @@ const Section2: React.FC = () => {
         </motion.div>
 
         <SectionImage src={indexPage} alt="Grayscale Image" />
-        <div className="section-2-link-container">
-          <div className="section-2-link">
-            <a href="https://kennysolutions.com/" target="_blank" rel="noopener noreferrer">
-              <button className="kenny-solutions-button">
-                Visit the live site
-              </button>
-            </a>
-          </div>
-          <div className="section-2-link">
-            <a href="https://kennysolutions.com/" target="_blank" rel="noopener noreferrer">
-              <button className="github-button" >
-                View on GitHub
-              </button>
-            </a>
-          </div>
-        </div>
       </div>
       <div className="row-2">
         <motion.div className="section-2-text-container"
-          initial={{ scale: 0.6 }}
+          initial={{ scale: 0.8 }}
           whileInView={{ scale: 1, transition: { type: 'spring', stiffness: 100, damping: 10 } }}
           >
           <h2>Key Features</h2>
