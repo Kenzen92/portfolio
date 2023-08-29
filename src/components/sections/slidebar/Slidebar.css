@@ -4,9 +4,7 @@
     height: 250px;
     z-index: 1;
     margin-top: -200px;
-    width: 130%;
     overflow:-moz-hidden-unscrollable;
-    border-radius: 5%;
 }
 
 .slidebar-container img {

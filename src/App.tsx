@@ -16,13 +16,13 @@ function App(): JSX.Element {
     <>
     <HeroImage />
     <Section1 />
-    <Section4 direction="right" start={10} finish={30} />
+    <Section4 direction="right" start={0} finish={0.4} />
     <Section2 />
     <ButtonStrip link1="https://kennysolutions.com/" link1Text="Visit the live site" link2="Github.com/kenzen92" link2Text="View on Github"/>
-    <Section4 direction="left" start={10} finish={30}/>
+    <Section4 direction="left" start={0.4} finish={0.7}/>
     <Section3 />
     <ButtonStrip link1="https://kennysolutions.com/" link1Text="Visit the live site" link2="Github.com/kenzen92" link2Text="View on Github"/>
-    <Section4  direction="right" start={10} finish={30}/>
+    <Section4  direction="right" start={0.7} finish={1}/>
     <Section5 />
     <Footer />
     </>
