@@ -1,4 +1,4 @@
-.section-4-container {
+.slidebar-container {
     position: relative;
     background-color: rgba(255, 255, 255, 0.833);
     height: 250px;
@@ -9,6 +9,6 @@
     border-radius: 5%;
 }
 
-.section-4-container img {
+.slidebar-container img {
     max-width: 100%;
 }

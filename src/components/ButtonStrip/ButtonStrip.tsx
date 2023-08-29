@@ -1,9 +1,8 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import './ButtonStrip.css';
 
 interface ButtonStripProps {
-  link1: string; // The prop should be either 'left' or 'right'
+  link1: string;
   link1Text: string;
   link2: string;
   link2Text: string;
@@ -11,10 +10,7 @@ interface ButtonStripProps {
 
 const ButtonStrip: React.FC<ButtonStripProps> = ({ link1, link1Text, link2, link2Text }) => {
   return (
-    <motion.div className="button-strip-container"
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    >  
+    <div className="button-strip-container">  
       <div className="section-link">
         <a href={link1} target="_blank" rel="noopener noreferrer">
           <button className="kenny-solutions-button">
@@ -29,7 +25,7 @@ const ButtonStrip: React.FC<ButtonStripProps> = ({ link1, link1Text, link2, link
           </button>
         </a>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
