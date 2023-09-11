@@ -1,3 +1,0 @@
-section 2 and 3 flexes dont have the same width, so the buttons don't line up.
-Check the constraints on the content for each column to see if any solutions can be found to line up.
-Possily move the link buttons to a section below the flex containers so that they match the global page width and find the true center
