@@ -15,8 +15,7 @@ const Slidebar: React.FC<SlidebarProps> = ({ direction, start, finish }) => {
     window.innerWidth,
     window.innerHeight,
   ]);
-  let scrollRange;
-  let xPos;
+  
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -31,13 +30,13 @@ const Slidebar: React.FC<SlidebarProps> = ({ direction, start, finish }) => {
     };
   }, []);
   let windowWidth = windowSize[0]
-  let windowHeight = windowSize[1]
 
+  let xPos;
   if (direction === "left") {
-    scrollRange = useTransform(scrollYProgress, [start, finish], [18, 0]);
+
     xPos = useTransform(scrollYProgress, [start, finish], [windowWidth, 0]);
   } else if (direction === "right") {
-    scrollRange = useTransform(scrollYProgress, [start, finish], [-18, 0]);
+
     xPos = useTransform(scrollYProgress, [start, finish], [-windowWidth, 0]);
   }
     
