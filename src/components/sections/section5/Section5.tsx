@@ -10,8 +10,8 @@ const Section5: React.FC = () => {
     return (
         <div className="section-5-container">       
         <motion.div className="text-container"
-            initial={{ scale: 0.6 }}
-            whileInView={{ scale: 1, transition: { type: 'spring', stiffness: 100, damping: 10 } }}
+            initial={{ opacity: 0, filter: "blur(5px)" }}
+            whileInView={{ opacity: 1, filter: "blur(0px)" }}
             >
             <h1>Technical Skills</h1>  
             <h2>Programming languages</h2>

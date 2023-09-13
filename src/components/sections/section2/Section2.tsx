@@ -13,8 +13,8 @@ const Section2: React.FC = () => {
     <div className="section-2-container">  
       <div className="row-1"> 
         <motion.div className="section-2-text-container"
-        initial={{ scale: 0.8 }}
-        whileInView={{ scale: 1, transition: { type: 'spring', stiffness: 100, damping: 10,  } }}
+        initial={{ opacity: 0, filter: "blur(5px)" }}
+        whileInView={{ opacity: 1, filter: "blur(0px)" }}
         >
           <h1>Teaching Platform App</h1>    
           <p className="section-2-text">
@@ -26,21 +26,18 @@ const Section2: React.FC = () => {
       </div>
       <div className="row-2">
         <motion.div className="section-2-text-container"
-          initial={{ scale: 0.8 }}
-          whileInView={{ scale: 1, transition: { type: 'spring', stiffness: 100, damping: 10 } }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           >
           <h2>Key Features</h2>
           <p>This app offers secure Google OAuth2-based user authentication and a custom calendar system for streamlined class scheduling. Teachers can upload and share study materials, manage assignments, and monitor progress effectively, enhancing the learning experience.</p>
           </motion.div>
         <SectionImage src={desktopDashboard} alt="Grayscale Image" />
-        <motion.div className="section-2-text-container"
-        initial={{ scale: 0.8 }}
-        whileInView={{ scale: 1, transition: { type: 'spring', stiffness: 100, damping: 10 } }}
-        >
+        <div className="section-2-text-container">
         <h2>Technology Stack</h2>
         <p>The app's backend utilizes Flask, ensuring efficient data handling, while the frontend employs Vanilla JavaScript and CSS for a responsive interface. It's hosted on AWS EC2 with Ubuntu, ensuring scalability. Nginx serves as a reverse proxy, and Gunicorn manages the Python application server, guaranteeing fast and reliable content delivery.</p>
         <SectionImage src={logos} alt="flask, nginx and gunicorn logo" />
-        </motion.div>
+        </div>
       </div>
     </div>
   );

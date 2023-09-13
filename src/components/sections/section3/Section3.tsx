@@ -9,15 +9,15 @@ const Section3: React.FC = () => {
     <div className="section-3-container">
       <div className="column-1">
         <motion.h1
-        initial={{ scale: 0.6 }}
-        whileInView={{ scale: 1, transition: { type: 'spring', stiffness: 100, damping: 10 } }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         >React Weather App</motion.h1>
         <SectionImage src={reactWeather} alt="Grayscale Image" />
       </div>
       <motion.div
         className="text-container"
-        initial={{ scale: 0.8 }}
-        whileInView={{ scale: 1, transition: { type: 'spring', stiffness: 100, damping: 10 } }}
+        initial={{ opacity: 0, filter: "blur(5px)" }}
+        whileInView={{ opacity: 1, filter: "blur(0px)" }}
       >
         <div className="section-3-text">
           <h2>Introducing WeatherApp: A React-Powered Weather Application</h2>
