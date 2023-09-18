@@ -2,7 +2,8 @@
     position: relative;
     z-index: 2;
     width: 100%;
-    background-color: rgb(41, 0, 88);
+    background: rgb(41,0,88);
+    background: linear-gradient(180deg, rgba(41,0,88,1) 15%, rgba(37,24,100,1) 100%);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -13,7 +14,6 @@
 }
 
 .section-1-container p {
-    font-size: large;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -22,31 +22,31 @@
 
 /* Media query for tablets (portrait orientation) */
 @media screen and (max-width: 1100px) {
-    .section-2-container {
+    .section-1-container {
       flex-wrap: wrap;
       height: auto;
       justify-content: center;
       font-size: large;
     }
 
-    .section-2-image {
+    .section-1-image {
       max-width: 70%;
     }
 
-    .section-2-text {
+    .section-1-text {
       margin-left: 0rem;
   }
   }
   
   /* Media query for mobile devices */
   @media screen and (max-width: 480px) {
-    .section-2-container {
+    .section-1-container {
       font-size: small;
     }
-    .section-2-image {
+    .section-1-image {
       max-width: 90%;
     }
-    .section-2-text {
+    .section-1-text {
       min-width: unset;
   }
   }

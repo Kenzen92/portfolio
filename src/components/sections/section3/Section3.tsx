@@ -25,7 +25,7 @@ const Section3: React.FC = () => {
       </div>
       <div className='row-2'>
         <motion.div
-          className="text-container"
+          className="section-3-text-container"
           initial={{ opacity: 0, filter: "blur(5px)" }}
           whileInView={{ opacity: 1, filter: "blur(0px)" }}
         >
@@ -39,18 +39,20 @@ const Section3: React.FC = () => {
             <br />
             <h3>Key Features:</h3>
             <p>
-              Current Weather: Instantly access up-to-date weather conditions for your selected location. Today's
-              Forecast: Dive into a detailed forecast for the current day, ensuring you're prepared for whatever lies
+              <b>Current Weather:</b> Instantly access up-to-date weather conditions for your selected location. 
+            </p>
+            <p>
+            <b>Today's Forecast:</b> Dive into a detailed forecast for the current day, ensuring you're prepared for whatever lies
               ahead.
             </p>
-            <p> Ten-Day Forecast: Plan your week with confidence using the comprehensive ten-day forecast feature.
+            <p> <b>Ten-Day Forecast:</b> Plan your week with confidence using the comprehensive ten-day forecast feature.
               Technology 
             </p>
-            <p>Behind the Magic: WeatherApp leverages the power of React components to seamlessly present
+            <p><b>Behind the Magic:</b> WeatherApp leverages the power of React components to seamlessly present
               weather data in a user-friendly format. By combining React's efficiency and reactivity with an external
               weather API, this app offers real-time updates and a smooth user experience.
             </p>
-            <p>ChartJS & Framer-motion: The content of each forecast is displayed visually using a custom graph using Chartjs, 
+            <p><b>ChartJS & Framer-motion:</b> The content of each forecast is displayed visually using a custom graph using Chartjs, 
               and the silky page animations are rendered using the Framer-motion library.</p>
           </div>
         </motion.div>

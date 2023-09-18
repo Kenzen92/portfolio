@@ -2,7 +2,7 @@
     position: relative;
     z-index: 2;
     width: 100%;
-    background-color: rgba(16, 8, 51, 0.568);
+    background-color: rgba(32,71,142,1);
     justify-content: space-between;
     height: 168px;
 }
@@ -90,7 +90,6 @@
     width: 24px;
     height: 24px;
   }
-  
   
   
   /* Media query for tablets (portrait orientation) */
