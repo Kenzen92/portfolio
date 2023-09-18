@@ -18,7 +18,8 @@ const Section2: React.FC = () => {
         >
           <h1>Teaching Platform App</h1>    
           <p className="section-2-text">
-            Welcome to my web development portfolio! In this showcase, I'm excited to present an innovative web application I've crafted using Flask, vanilla JavaScript, and CSS. This functional prototype, hosted on an AWS EC2 instance powered by Ubuntu, is seamlessly served by Nginx and Gunicorn, ensuring smooth user experiences.
+            I spent the last 5 years working as an online freelance teacher. I've used many products for managing classes and schedules, and none of them really did exactly what I needed in a simple and intuitative fashion. 
+            I decided this would make a great project for me to tackle, and a challenge in terms of design, logic and architecture that would level up my web application skills.
           </p>
         </motion.div>
 
