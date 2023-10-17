@@ -20,22 +20,30 @@ Before you start, ensure you have the following installed:
    ```
 
 2. Navigate to the project directory:
-   cd your-portfolio
+
+   ```cd your-portfolio
+
+   ```
 
 3. Install the project dependencies:
-   npm install
+   ```npm install
 
+   ```
 4. Running the Development Server
    To start the development server, run:
-   npm run dev
 
-This will launch the application and typically be available at http://localhost:3000. As you make changes to the code, the development server will hot-reload, allowing you to see your changes in real-time.
+   ```npm run dev
+
+   ```
+
+   This will launch the application and typically be available at http://localhost:3000. As you make changes to the code, the development server will hot-reload, allowing you to see your changes in real-time.
 
 5. Building for Production
-   npm run build
+   ```npm run build
 
-Customization
-You can customize your portfolio by modifying the React components and styles in the project. Key files and directories to look out for include:
+   ```
+   Customization
+   You can customize your portfolio by modifying the React components and styles in the project. Key files and directories to look out for include:
 
 src directory: Contains your React components and application logic.
 src/styles directory: Contains CSS or SCSS stylesheets for your components.
