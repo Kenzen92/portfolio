@@ -14,26 +14,30 @@ Before you start, ensure you have the following installed:
 
 1. Clone the repository:
 
-   ```git clone https://github.com/your-username/your-portfolio.git
+   ```
+   git clone https://github.com/your-username/your-portfolio.git
 
    ```
 
 2. Navigate to the project directory:
 
-   ```cd your-portfolio
+   ```
+   cd your-portfolio
 
    ```
 
 3. Install the project dependencies:
 
-   ```npm install
+   ```
+   npm install
 
    ```
 
 4. Running the Development Server
    To start the development server, run:
 
-   ```npm run dev
+   ```
+   npm run dev
 
    ```
 
@@ -41,7 +45,8 @@ Before you start, ensure you have the following installed:
 
 5. Building for Production
 
-   ```npm run build
+   ```
+   npm run build
 
    ```
 
