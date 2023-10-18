@@ -18,10 +18,10 @@ function App(): JSX.Element {
     <Section1 />
     <Section4 direction="right" start={0} finish={0.4} />
     <Section2 />
-    <ButtonStrip link1="https://kennysolutions.com/teach" link1Text="Visit the live site" link2="Github.com/kenzen92" link2Text="View on Github"/>
+    <ButtonStrip link1="https://kennysolutions.com/teach" link1Text="Try it yourself!" link2="https://github.com/kenzen92" link2Text="View on Github"/>
     <Section4 direction="left" start={0.4} finish={0.7}/>
     <Section3 />
-    <ButtonStrip link1="https://kennysolutions.com/weather" link1Text="Visit the live site" link2="Github.com/kenzen92" link2Text="View on Github"/>
+    <ButtonStrip link1="https://kennysolutions.com/weather" link1Text="Try it yourself!" link2="https://github.com/Kenzen92/react-weather" link2Text="View on Github"/>
     <Section4  direction="right" start={0.7} finish={1}/>
     <Section5 />
     <Footer />
